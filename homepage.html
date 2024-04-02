@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="https://i513275.hera.fhict.nl/portfolio-daniell/homepage.css"> -->
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <script defer src="portfolio.js"></script>
+    <title>Daniell's Portfolio</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Afbeeldingen/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Afbeeldingen/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Afbeeldingen/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Afbeeldingen/site.webmanifest" />
+  </head>
+  <body>
+    <!-------- Navbar -------->
+    <nav id="#home" class="main-nav">
+      <div class="content nav-content">
+        <a href="homepage.html" class="nav-logo"
+          ><img id="mijn-logo" src="Afbeeldingen/D V-2.png"
+        /></a>
+        <ul class="nav-links">
+          <li>
+            <a href="#Overzicht" class="navlink hover-effect">Leeruitkomsten</a>
+          </li>
+          <li><a href="#projects" class="navlink hover-effect">Projects</a></li>
+          <!-- <li><a href="#" class="navlink hover-effect">Contact</a></li> -->
+          <!-- <li><a href="#" id="theme-toggle" class="navlink hover-effect material-icons-round"> contrast </a></li> -->
+        </ul>
+      </div>
+    </nav>
+    <!--------- Einde navbar -------->
+
+    <header
+      style="background-image: url('Afbeeldingen/operahouse.jpg')"
+      id="top"
+      class="hero-single-work"
+    >
+      <div class="hero-single-work-content">
+        <h1 id="typewriter">Daniell Verwegen</h1>
+        <!------------ EDIT HIER ------------->
+        <h3>Welkom op mijn portfolio</h3>
+        <!------------ EDIT HIER ------------->
+        <h3 class="student">
+          Een ict media student op Fontys University of Applied Sciences
+        </h3>
+      </div>
+      <a href="#Overzicht" class="arrow-down">
+        <span></span>
+      </a>
+    </header>
+    <!-------------Einde Header -------------->
+    <main class="single-work">
+      <section id="Overzicht" class="single-work-intro-section">
+        <div class="content">
+          <h2 class="single-work-intro-title">Overzicht</h2>
+        </div>
+      </section>
+      <section class="navboxes">
+        <div class="navbox-kolom">
+          <div class="navbox projecten">
+            <span class="material-icons-round"> filter_1 </span>
+            <h1>Projecten</h1>
+            <a href="doublelife.html" class="hover-link"
+              ><h3>Double Life Challenge</h3></a
+            >
+            <a href="Dehaze.html" class="hover-link"><h3>DEHAZE</h3></a>
+            <a href="happyhorizon.html" class="hover-link"
+              ><h3>Happy Horizon</h3></a
+            >
+            <a href="portfolioproject.html" class="hover-link"
+              ><h3>Mijn Portfolio</h3></a
+            >
+            <a href="pidentity.html" class="hover-link"
+              ><h3>Professional Identity</h3></a
+            >
+            <a href="projectx.html" class="hover-link"><h3>Project X</h3></a>
+            <a href="codingexperience.html" class="hover-link"
+              ><h3>My coding experience</h3></a
+            >
+          </div>
+          <div class="navbox leeruitkomsten">
+            <span class="material-icons-round"> view_compact </span>
+            <h1>Leeruitkomsten</h1>
+            <div class="leeruitkomsten-links">
+              <a href="#interactive-media" class="hover-link"
+                ><h3>Interactive media</h3></a
+              >
+              <a href="#development" class="hover-link"><h3>Development</h3></a>
+              <a href="#design" class="hover-link"><h3>Design</h3></a>
+              <a href="#research" class="hover-link"><h3>Research</h3></a>
+              <a href="#communication" class="hover-link"
+                ><h3>Communication</h3></a
+              >
+              <a href="#professional-identity" class="hover-link"
+                ><h3>Professional Identity</h3></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-----------Einde overzicht  --------->
+
+      <section id="projects" class="projecten-sectie">
+        <div class="main-content">
+          <h4>PROJECTS</h4>
+          <h2>LEERUITKOMSTEN</h2>
+          <ul class="projecten-content-lijst">
+            <li>
+              <div id="interactive-media" class="project-container">
+                <h1>1. Interactive Media</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='portfolioproject.html';"
+                  >
+                    <img src="Afbeeldingen/portfolio.png" />
+                    <div class="info">
+                      <h1>Portfolio</h1>
+                      <p>
+                        Het proces van het maken van mijn eigen portfolio waarop
+                        ik mijn leeruitkomsten aantoon
+                      </p>
+                      <a href="portfolioproject.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='happyhorizon.html';"
+                  >
+                    <img src="Afbeeldingen/happy-horizon.jpeg" />
+                    <div class="info">
+                      <h1>Happy Horizon</h1>
+                      <p>Het maken van een interactieve prototype in Figma</p>
+                      <a href="happyhorizon.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='projectx.html';"
+                  >
+                    <img src="Afbeeldingen/Xappbackgroundedited.png" />
+                    <div class="info">
+                      <h1>Project X</h1>
+                      <p>Een prototype in Figma van mijn eigen app</p>
+                      <a href="projectx.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="development" class="project-container">
+                <h1>2. Development</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='happyhorizon.html';"
+                  >
+                    <img src="Afbeeldingen/happy-horizon.jpeg" />
+                    <div class="info">
+                      <h1>Happy Horizon & WELDAS - Easter eggs</h1>
+                      <p>
+                        Het developen van de nieuwe website die ik heb
+                        gedesigned + een easter egg erin verwerken
+                      </p>
+                      <a href="happyhorizon.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='portfolioproject.html';"
+                  >
+                    <img src="Afbeeldingen/portfolio.png" />
+                    <div class="info">
+                      <h1>Portfolio</h1>
+                      <p>
+                        Het proces van het maken van mijn eigen portfolio waarop
+                        ik mijn leeruitkomsten aantoon
+                      </p>
+                      <a href="portfolioproject.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='codingexperience.html';"
+                  >
+                    <img src="Showcases/codethumbnail.png" />
+                    <div class="info">
+                      <h1>My Coding Experience</h1>
+                      <p>
+                        Hierin staan ervaringen en leermomenten van mijzelf bij
+                        het coderen
+                      </p>
+                      <a href="codingexperience.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='projectx.html';"
+                  >
+                    <img src="Afbeeldingen/Xappbackgroundedited.png" />
+                    <div class="info">
+                      <h1>Project X</h1>
+                      <p>Mijn eerste React Native app</p>
+                      <a href="projectx.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="design" class="project-container">
+                <h1>3. Design</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='doublelife.html';"
+                  >
+                    <img src="Afbeeldingen/doublelifechallenge.jpg" />
+                    <div class="info">
+                      <h1>Double Life Challenge</h1>
+                      <p>Het maken van een film poster over jezelf</p>
+                      <a href="doublelife.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='Dehaze.html';"
+                  >
+                    <img src="Afbeeldingen/stylescape.png" />
+                    <div class="info">
+                      <h1>DEHAZE</h1>
+                      <p>
+                        Designen van een stylescape, brandguide & andere social
+                        media content
+                      </p>
+                      <a href="Dehaze.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='happyhorizon.html';"
+                  >
+                    <img src="Afbeeldingen/weldas-logo.jpeg" />
+                    <div class="info">
+                      <h1>WELDAS Europe</h1>
+                      <p>
+                        Het wireframen & designen van een nieuwe website voor
+                        WELDAS Europe in samenwerking met Happy Horizon
+                      </p>
+                      <a href="happyhorizon.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='portfolioproject.html';"
+                  >
+                    <img src="Afbeeldingen/portfolio.png" />
+                    <div class="info">
+                      <h1>Portfolio</h1>
+                      <p>
+                        Het proces van het maken van mijn eigen portfolio waarop
+                        ik mijn leeruitkomsten aantoon
+                      </p>
+                      <a href="portfolioproject.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="research" class="project-container">
+                <h1>4.Research</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='Dehaze.html';"
+                  >
+                    <img src="Showcases/socialmediaonderzoek.png" />
+                    <div class="info">
+                      <h1>DEHAZE</h1>
+                      <p>
+                        Onderzoek doen naar hoe je het beste content in kunt
+                        zetten & en maken op sociale media
+                      </p>
+                      <a href="Dehaze.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='happyhorizon.html';"
+                  >
+                    <img src="Showcases/happy-horizon.png" />
+                    <div class="info">
+                      <h1>Happy Horizon</h1>
+                      <p>
+                        Onderzoeken van pixelgrootte's voor het designen van een
+                        mobile first webpagina, zorgen voor conversie
+                      </p>
+                      <a href="happyhorizon.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='portfolioproject.html';"
+                  >
+                    <img src="Afbeeldingen/portfolio.png" />
+                    <div class="info">
+                      <h1>Portfolio</h1>
+                      <p>
+                        Het proces van het maken van mijn eigen portfolio waarop
+                        ik mijn leeruitkomsten aantoon
+                      </p>
+                      <a href="portfolioproject.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='projectx.html';"
+                  >
+                    <img src="Afbeeldingen/Xappbackgroundedited.png" />
+                    <div class="info">
+                      <h1>Project X</h1>
+                      <p>Mijn eerste React Native app</p>
+                      <a href="projectx.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="communication" class="project-container">
+                <h1>5. Communication</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='Dehaze.html';"
+                  >
+                    <img src="Afbeeldingen/dehaze.png" />
+                    <div class="info">
+                      <h1>DEHAZE</h1>
+                      <p>
+                        Presenteren en vragen om feedback m.b.v. gemaakte
+                        producten
+                      </p>
+                      <a href="Dehaze.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                  <div
+                    class="card"
+                    onclick="window.location.href='happyhorizon.html';"
+                  >
+                    <img src="Afbeeldingen/happy-horizon.jpeg" />
+                    <div class="info">
+                      <h1>Happy Horizon</h1>
+                      <p>Communicatie met een lasser & klant van WELDAS</p>
+                      <a href="happyhorizon.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div id="professional-identity" class="project-container">
+                <h1>6. Professional Identity</h1>
+                <div class="wrapper">
+                  <div
+                    class="card"
+                    onclick="window.location.href='pidentity.html';"
+                  >
+                    <img src="Afbeeldingen/fullstack.png" />
+                    <div class="info">
+                      <h1>Professional Identity</h1>
+                      <p>
+                        Wat is mijn professionele identiteit en wat is de status
+                        van mijn carrière?
+                      </p>
+                      <a href="pidentity.html">NAAR PROJECT</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!------------- footer sectie ----------->
+
+    <footer>
+      <div class="footer-content">
+        <a href="#top" class="footer-logo">
+          <img src="Afbeeldingen/D-V.ico" />
+        </a>
+        <div class="footer-inner-content">
+          <ul class="footer-links">
+            <li>
+              <a
+                href="https://git.fhict.nl/users/I513275/projects"
+                class="navlink hover-effect"
+                target="_blank"
+                >Git</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://riccardozanutta.com"
+                class="navlink hover-effect"
+                target="_blank"
+                >Inspiratie</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/PeekingBad/pens/loved"
+                class="navlink hover-effect"
+                target="_blank"
+                >Codepen inspirations</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/daniell-verwegen-3a656515a/"
+                class="navlink hover-effect"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navlink hover-effect">Projects</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#" id="back-to-top-btn" title="Terug naar boven">&uarr;</a>
+  </body>
+</html>

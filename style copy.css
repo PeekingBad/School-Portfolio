@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&family=Poppins:wght@300;400;500;600;700;800&family=Tilt+Warp&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+body{
+  box-sizing: border-box;
+}
+
+/* ==============================logo + navbar==================================*/
+
+nav{
+  background-color: transparent;
+}
+
+.navbar-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width:1170px;
+  margin: 0 270px;
+}
+
+.logo img {
+  height: 60px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: #023047;
+  border-radius: 8px;
+  margin-right: 50px;
+}
+
+nav ul li {
+  background-color: #023047;
+  margin-inline: 12px;
+  padding: 8px;
+}
+
+.navlink{
+  text-decoration: none;
+  color: #d3d3d3;
+  font-weight: bold;
+  background-color: #023047;
+}
+
+.navlink.hover-effect:hover{
+  color: white;
+  transition: .3s ease-in-out;
+}
+
+
+.navlink.hover-effect:hover::after{
+  content: '';
+  height:2px;
+  width:100%;
+  background-color: #FB8500;
+  display:block;
+}
+
+.navlink.hover-effect::after{
+  content: '';
+  height: 2px;
+  width:0%;
+  background-color: white;
+  display: block;
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+#change-theme{
+  top: 3px;
+  position: relative;
+}
+
+
+
+/* ========================== Introductie + recent project===================== */
+.top-header{
+  height:100vh;
+  background-size:cover;
+  background-position: center;
+  max-height: 1200px;
+}
+
+.top{
+  background-color: transparent;
+}
+
+.homepage-content{
+  padding-top: 350px;
+  margin-left: 315px;
+  margin-right: 315px;
+  background-color: transparent;
+}
+
+.homepage-content h1 {
+  font-size: 55px;
+  padding-left: 50px;
+  background-color: transparent;
+  text-align: left;
+}
+
+.homepage-content p{
+  padding-left: 50px;
+  font-size: 15px;
+  font-style:italic;
+  font-weight: 150;
+  background-color: transparent;
+}
+
+/* .homepage-content img {
+  float: inline-end;
+  padding-right: 250px;
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 5px;
+  } */
+
+/* 
+.homepage-content span{
+  background-color: transparent;
+}
+
+.homepage-content span img{
+  max-width: 500px;
+  max-height: 350px;
+  border-radius: 5px;
+  float: inline-end;
+  margin-right: 40px;
+} */
+
+
+.grid{
+  border-radius: 5px;
+  float:right;
+  margin-right: 40px;
+}
+
+.img-wrapper{
+  position:relative;
+  overflow:hidden;
+}
+
+.img-wrapper > img{
+  display:block;
+  width:100%;
+  max-width: 500px;
+  min-height: 350px;
+  border-radius: 5px;
+}
+
+.img-wrapper > .tekst-content{
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding:1rem;
+  background: rgba(255,255,255, .4);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tekst-content > a{
+  text-decoration: none;
+  font-family: bebas neue,poppins, sans-serif;
+  font-style: italic;
+  text-shadow: black;
+  color: #023047;
+  font-size: 75px;
+}
+
+.img-wrapper > img,
+.img-wrapper > .tekst-content{
+  transition: 400ms ease-in-out;
+}
+
+.img-wrapper:hover > img.blur{
+  filter: blur(8px);
+}
+
+.img-wrapper > .tekst-content.slide-left{
+  transform: translateX(-100%);
+}
+
+.img-wrapper:hover > .tekst-content.slide-left{
+  transform: translateX(0%);
+}
+
+
+/* ================= pijltje anmiatie ============*/
+
+.arrow-down{
+  position: absolute;
+  left: 50%;
+  top: 95%;
+  transform: translate(-50%, -50%); 
+}
+
+.arrow-down span{
+  display: block;
+  width:15px;
+  height:15px;
+  background-color:transparent;
+  border-bottom: 3px solid  #023047;
+  border-right: 3px solid  #023047;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: scroll 2s infinite;
+}
+
+.arrow-down span:nth-child(2) {
+  animation-delay: -.2s;
+}
+
+.arrow-down span:nth-child(3) {
+  animation-delay: -.4s;
+}
+
+@keyframes scroll{
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0 ;
+    transform: rotate(45deg) translate(20px,20px);
+    
+  }
+}
+
+
+/* ====================== overzicht sectie ================= */
+.middelnav{
+  padding: 80px 0;
+  background-color: #023047;
+  height: 150px;
+}
+
+.main-nav{
+  margin: 0 315px;
+}
+
+.main-nav h1{
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 8px;
+}
+
+
+.navboxes{
+  margin-top: -120px;
+}
+
+.main-nav-box{
+  height: auto;
+  margin: 0 315px;
+}
+
+.navbox-kolom{
+  display: flex;
+  justify-content: center;
+}
+
+.navbox{
+  padding: 50px 40px;
+  border: 1px solid black;
+  background-color: #FB8500;
+  min-width: 350px;
+}
+
+.navbox.projecten{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.navbox.leeruitkomsten{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.navbox.leeruitkomsten span{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 4.4rem;
+  color:white;
+}
+
+
+.navbox.projecten span{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  font-size: 4.4rem;
+  color:white;
+}
+
+
+
+.hover-link{
+  text-decoration: none;
+  position:relative;
+}
+
+.hover-link h3:hover{
+  color:white;
+  transition: .2s ease-in-out;
+}
+
+.hover-link h3::after{
+  content: '';
+  height: 2px;
+  width:0%;
+  background-color: #023047;
+  display: block;
+  transition: .5s ease-in-out;
+}
+
+.hover-link h3:hover::after{
+  content: '';
+  height:2px;
+  width:100%;
+  background-color: white;
+  display:block;
+}
+
+
+
+.navbox h1{
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.navbox h3{
+  padding: 10px 0px;
+  text-align: center;
+  text-decoration: none;
+  color:#023047;
+}
+
+/* ================= projecten/leeruitkomsten sectie ============*/
+
+.projecten-sectie{
+  padding: 80px 0;
+}
+
+.main-content{
+  margin: 0 115px;
+  background-color: transparent;
+}
+
+.main-content > h4{
+  text-align: center;
+  font-family: LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #b19386;
+  margin-bottom: 25px;
+}
+
+.main-content > h2{
+  text-align: center;
+  margin-bottom: 70px;
+  color: #4a4a4a;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+
+.projecten-content-lijst{
+
+  list-style: none;
+}
+
+.project-container{
+  margin: 0 50px;
+  text-transform:uppercase;
+}
+
+
+.project-cases{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+
+.project-container > h1{
+  margin-bottom: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.project-container > h3{
+  margin: 10px 0;
+  text-align: center;
+}
+
+.projecten-content-lijst li{
+  margin-bottom: 135px;
+}
+
+.projecten-content-lijst li a{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.project-afbeeldingen {
+  border: solid 2px black;
+  max-width: 400px;
+  height: 250px;
+}
+
+/* ========================= FOOTER ======================================== */
+
+footer{
+  padding: 6% 0;
+  width:100%;
+  background-color: #023047;
+}
+
+.footer-content{
+  color:white;
+  margin: 0 315px;
+}
+
+.footer-logo img{
+  width: 120px;
+  height:120px;
+  border: white solid 2px;
+  border-radius: 5px;
+  transition: all .3s ease;
+}
+
+.footer-logo img:hover{
+  transform: scale(1.10);
+}
+
+.footer-logo{
+  width: 120px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.footer-inner-content{
+  text-align: center;
+}
+
+.footer-links{
+  display:block;
+  list-style: none;
+  padding:0;
+  margin:0;
+  text-align: center;
+}
+
+.footer-links li{
+  display:inline-block;
+  margin-right: 60px;
+}
+
+.footer-links a{
+  display:block;
+  padding: 15px 0;
+  position: relative;
+  transition: color .3 ease;
+  color:white;
+  text-decoration: none;
+}
+
